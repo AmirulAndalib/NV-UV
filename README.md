@@ -9,8 +9,9 @@ For the download password, visit the https://extreme.pcgameshardware.de/forums/n
 
 Requirements
 
-NVIDIA RTX 5090, 5080, 5070 Ti,5070, 5060(TI)
-NVIDIA RTX 4090, 4080, 4070(TI,S) 
+NVIDIA RTX 5090, 5080, 5070 Ti,5070, 5060(TI), 
+NVIDIA RTX 4090, 4080, 4070(TI,S)
+
 MSI Afterburner 4.6.6+ with RTSS
 Windows 11 (64-bit)
 Latest NVIDIA driver
