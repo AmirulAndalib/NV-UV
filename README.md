@@ -35,4 +35,6 @@ Live telemetry via MAHM Shared Memory and NVML. The stress test runs as a separa
 Support the Project
 NV-UV is free. If you like it: PayPal
 
-Build 21W · Antares · Open Alpha
+https://www.paypal.com/paypalme/christianpapaioannou
+
+Build 22W · Cantor · Open Alpha
