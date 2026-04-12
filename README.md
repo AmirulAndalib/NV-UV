@@ -9,7 +9,8 @@ For the download password, visit the https://extreme.pcgameshardware.de/forums/n
 
 Requirements
 
-NVIDIA RTX 5090, 5080, 5070 Ti, or 5070
+NVIDIA RTX 5090, 5080, 5070 Ti,5070, 5060(TI)
+NVIDIA RTX 4090, 4080, 4070(TI,S) 
 MSI Afterburner 4.6.6+ with RTSS
 Windows 11 (64-bit)
 Latest NVIDIA driver
@@ -23,11 +24,12 @@ Voltage Step Scanner — DX12+DXR stress engine with FMA math-error detection
 Game Replay — automatic frequency step-down on crash, with per-game learning loop
 UV-Pilot — detects 587 games, automatically switches to the optimal UV preset
 Smart Hz — desktop 60Hz, gaming native Hz (experimental)
-Mini View, DE/EN, System Tray, 3 Skins
+Mini View, DE/EN, System Tray, 4 Skins
 
 
 How It Works
-NV-UV reads and writes MSI Afterburner profile files to apply voltage/frequency curves. Live telemetry via MAHM Shared Memory and NVML. The stress test runs as a separate process so a GPU crash won't take down the UI.
+NV-UV reads and writes MSI Afterburner profile files to apply voltage/frequency curves. 
+Live telemetry via MAHM Shared Memory and NVML. The stress test runs as a separate process so a GPU crash won't take down the UI.
 
 Support the Project
 NV-UV is free. If you like it: PayPal
