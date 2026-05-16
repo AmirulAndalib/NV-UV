@@ -1,0 +1,174 @@
+NV-UV – End User License Agreement
+Copyright (c) 2026 Christian Papaioannou. All rights reserved.
+
+This software ("NV-UV") is provided by Christian Papaioannou
+("the Licensor") for personal and non-commercial use only.
+
+
+1. GRANT OF LICENSE
+
+You may download, install, and use this software on any device that
+you own or control, free of charge, for private and non-commercial
+purposes.
+
+
+2. RESTRICTIONS
+
+You may not:
+
+  (a) modify, reverse engineer, decompile, disassemble, or otherwise
+      attempt to discover the source code of this software, except
+      to the extent that such activity is expressly permitted by
+      applicable law notwithstanding this limitation;
+
+  (b) distribute, sublicense, rent, lease, lend, sell, or transfer
+      this software or any part thereof to any third party without
+      the prior written consent of the Licensor;
+
+  (c) bundle, embed, integrate, or include this software with or
+      within any commercial product, hardware package, paid service,
+      or promotional offering without a separate commercial license;
+
+  (d) use this software in any commercial environment, including but
+      not limited to OEM bundling, integration into paid services,
+      SaaS offerings, or as part of any product or service for which
+      a fee is charged;
+
+  (e) remove, alter, or obscure any copyright, trademark, attribution,
+      or other proprietary notices from the software or its
+      accompanying documentation.
+
+
+3. INTELLECTUAL PROPERTY
+
+You acknowledge and agree that this software is the proprietary and
+confidential property of the Licensor and that all intellectual
+property rights in this software, including but not limited to its
+name, logo, user interface, algorithms, and underlying methods,
+belong to the Licensor. You agree to respect and protect these
+rights and not to infringe or violate them in any way.
+
+The name "NV-UV" is a trademark of the Licensor.
+
+
+4. EXTERNAL DEPENDENCIES
+
+NV-UV is a companion utility that requires MSI Afterburner to be
+installed and configured on the same system in order to function.
+NV-UV does not include, bundle, or distribute MSI Afterburner.
+
+Users must obtain MSI Afterburner separately from official sources
+and agree to its respective license terms before using NV-UV.
+
+NV-UV reads from and writes to MSI Afterburner configuration files
+and the MSI Afterburner Hardware Monitor (MAHM) shared memory
+interface as provided by MSI Afterburner. Continued functionality
+of NV-UV depends on these interfaces remaining available and
+backward-compatible. The Licensor makes no guarantees regarding
+long-term compatibility with future versions of MSI Afterburner.
+
+
+5. COMMERCIAL LICENSING
+
+Commercial use of NV-UV, including OEM bundling, hardware or
+software integration into paid products, or any use not covered by
+this license, requires a separate commercial license from the
+Licensor. Please note that any commercial license granted by the
+Licensor covers NV-UV only and does not grant any rights regarding
+MSI Afterburner or any other third-party software. Commercial use
+of MSI Afterburner requires separate agreements with its respective
+rights holders.
+
+For commercial licensing inquiries regarding NV-UV, please contact:
+
+    [christian.papaioannou@gmx.de]
+
+
+6. NVIDIA RELATIONSHIP
+
+NV-UV interacts with NVIDIA graphics drivers via the NVIDIA Driver
+API (NVAPI). This software is not affiliated with, endorsed by, or
+sponsored by NVIDIA Corporation. NVIDIA, GeForce, RTX, Ada, and
+Blackwell are trademarks of NVIDIA Corporation.
+
+Users of this software are responsible for compliance with NVIDIA's
+End User License Agreement for their graphics drivers. Modification
+of GPU voltage and frequency settings may void hardware warranties
+provided by the GPU manufacturer.
+
+
+7. THIRD-PARTY TRADEMARKS
+
+MSI, MSI Afterburner, and the MAHM shared memory interface are
+trademarks or product names of Micro-Star International Co., Ltd.
+and/or the original developers of MSI Afterburner. NV-UV is not
+affiliated with, endorsed by, or sponsored by Micro-Star
+International Co., Ltd. or the developers of MSI Afterburner.
+
+All other trademarks and registered trademarks referenced in this
+software or its documentation are the property of their respective
+owners.
+
+
+8. THIRD-PARTY COMPONENTS
+
+NV-UV includes NvApiNative.dll, a native bridge whose NVAPI voltage
+and frequency curve access approach is based on the Green Curve
+project by aufkrawall, distributed under the MIT License. The full
+text of this license and required attributions are provided in the
+file THIRD-PARTY-NOTICES.txt accompanying this software.
+
+
+9. NO WARRANTY
+
+THE LICENSOR MAKES NO WARRANTIES OR REPRESENTATIONS OF ANY KIND
+WITH RESPECT TO THIS SOFTWARE. THE SOFTWARE IS PROVIDED "AS IS"
+WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+
+This disclaimer extends to compatibility with MSI Afterburner,
+NVIDIA drivers, Windows operating system updates, and any other
+third-party software or hardware that NV-UV interacts with.
+
+
+10. USE AT YOUR OWN RISK
+
+NV-UV modifies GPU voltage and frequency settings and interacts
+with MSI Afterburner profile configurations. Improper use may
+cause system instability, application crashes, data loss,
+configuration loss in MSI Afterburner, or in rare cases hardware
+damage. The Licensor accepts no liability for any damage, data
+loss, hardware issues, or other consequences arising from the use
+of this software.
+
+
+11. TERMINATION
+
+This license is effective until terminated. Your rights under this
+license will terminate automatically without notice from the
+Licensor if you fail to comply with any term of this license. Upon
+termination, you must cease all use of the software and destroy all
+copies in your possession.
+
+
+12. GOVERNING LAW
+
+This license shall be governed by and construed in accordance with
+the laws of the Federal Republic of Germany, without regard to its
+conflict of law provisions. The place of jurisdiction shall be the
+Licensor's place of residence, to the extent permitted by law.
+
+
+13. SEVERABILITY
+
+If any provision of this license is held to be unenforceable or
+invalid, that provision shall be enforced to the maximum extent
+possible, and the remaining provisions shall remain in full force
+and effect.
+
+
+14. ACCEPTANCE
+
+By downloading, installing, or using this software, you agree to be
+bound by the terms and conditions of this license.
