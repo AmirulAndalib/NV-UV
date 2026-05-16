@@ -61,7 +61,7 @@ NV-UV is free. If you find it useful, you can support development via [PayPal](h
 
 ## License
 
-NV-UV is closed-source software. See [LICENSE](LICENSE) for terms.
+NV-UV is closed-source software. See [LICENSE](LICENSE.txt) for terms.
 
 Third-party components and attributions are documented in [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt).
 
