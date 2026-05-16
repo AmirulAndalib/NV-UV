@@ -5,7 +5,7 @@ NV-UV simplifies GPU undervolting by working alongside MSI Afterburner. One-clic
 
 NV-UV is a **companion tool**, not a replacement for Afterburner. For overclocking, OSD, fan control and advanced curve editing, Afterburner remains the tool of choice.
 
-> **Platform:** Windows 10/11 (64-bit) only. NV-UV does not run on Linux or macOS.
+**Platform:** Windows 10/11 (64-bit) only. NV-UV does not run on Linux or macOS.
 
 > **Not to be confused with** [doums/nvuv](https://github.com/doums/nvuv), a separate CLI tool for NVIDIA undervolting on Linux written in Zig. Different platform, different scope, different project.
 
