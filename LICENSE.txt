@@ -24,7 +24,8 @@ What you may not do without my permission
 * Remove the copyright notice, the "NV-UV" name, or the
   attribution to aufkrawall's Green Curve project.
 
-The name "NV-UV" is a trademark of the author.
+The name "NV-UV", its stylised form "NV⚡UV" with the lightning bolt symbol between the letters, 
+and the associated NV-UV logo are trademarks of the author.
 
 
 External dependencies
