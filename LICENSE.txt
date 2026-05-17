@@ -1,6 +1,7 @@
 NV-UV — License
 Version 1.0 — November 2026
 
+Build 22 · "Cantor" · Open Alpha
 Copyright (c) 2026 Christian Papaioannou. All rights reserved.
 
 NV-UV is free for personal use on all computers you personally own and
