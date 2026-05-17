@@ -1,32 +1,68 @@
 NV-UV — License
+Version 1.0 — November 2026
 
 Copyright (c) 2026 Christian Papaioannou. All rights reserved.
 
-NV-UV is free for personal and non-commercial use.
+NV-UV is free for personal use on all computers you personally own and
+operate. This includes private use, hobbyist streaming, and any kind of
+non-commercial activity.
 
-This means you can use NV-UV on your own computers, share screenshots
-and benchmarks, write about it, and recommend it to friends. The
-source code is closed, but bug reports, feature requests, and log
-files are very welcome through GitHub Issues or the PCGH Extreme
-forum thread.
+
+Media coverage and content creation
+
+Content creators, streamers, reviewers, journalists, and YouTubers — both
+hobbyist and professional — are explicitly welcome to:
+
+* Use NV-UV in videos, streams, articles, reviews, comparisons,
+  benchmark tests, and tutorials.
+* Show the user interface, demonstrate features, and discuss results.
+* Take screenshots, record gameplay with NV-UV active, and share
+  benchmark data.
+* Embed NV-UV in performance comparisons, "best of" lists, or
+  recommendation videos.
+
+This use is free of charge and does not require permission, even when
+the content is monetized through ads, sponsorships, memberships,
+Patreon, Super Chats, channel subscriptions, or similar revenue
+streams. The only requirement: please credit "NV-UV" by name and,
+where reasonable, link to the official project page.
+
+If you're a press outlet or larger channel and want early access to
+new builds, release notes, or background information, just reach out
+via the contact address below.
 
 
 What you may not do without my permission
 
-* Sell NV-UV, charge for it, or include it in any paid product or
-  service.
-* Bundle NV-UV with hardware or commercial software offerings
-  (OEM deals require a separate commercial license — see below).
+* Sell, sublicense, or charge money for NV-UV itself.
+* Bundle NV-UV with hardware sales, prebuilt systems, or commercial
+  software offerings (OEM deals require a separate commercial license
+  — see below).
+* Use NV-UV as a paid service component (for example: charging
+  customers for tuning sessions where NV-UV does the actual work).
 * Redistribute modified copies, or upload NV-UV to other download
-  sites without asking.
+  sites, torrent platforms, warez portals, or alternative mirrors
+  without asking.
 * Reverse engineer, decompile, or extract the protected parts of
   the software.
-* Remove the copyright notice, the "NV-UV" name, or the
-  attribution to aufkrawall's Green Curve project.
+* Distribute cracked, patched, or unlocked versions of NV-UV.
+* Remove the copyright notice, the "NV-UV" name, or the attribution
+  to aufkrawall's Green Curve project.
 
 
-The name "NV-UV", its stylised form "NV⚡UV" with the lightning bolt symbol between the letters, 
-and the associated NV-UV logo are trademarks of the author.
+Trademark
+
+The name "NV-UV", its stylised form "NV⚡UV" with the lightning bolt
+symbol between the letters, and the associated NV-UV logo are
+trademarks of the author.
+
+
+Privacy
+
+NV-UV does not collect, transmit, or share any personal data,
+telemetry, or usage statistics. All operation is local to your
+computer. Crash dumps and log files stay on your machine unless you
+choose to share them in a bug report.
 
 
 External dependencies
@@ -68,6 +104,9 @@ touch and we'll work out a commercial license:
 
 No warranty / use at your own risk
 
+NV-UV is currently in Open Alpha status. Bugs, unexpected behavior,
+and breaking changes between versions are expected.
+
 NV-UV modifies GPU voltage and frequency settings, and interacts
 with MSI Afterburner profiles. Improper settings can cause crashes,
 system instability, lost Afterburner configurations, or in rare
@@ -77,9 +116,22 @@ responsibility for damage to your system, your data, or your
 hardware.
 
 
+Termination
+
+If you violate any of these terms, your right to use NV-UV ends
+immediately. You must then delete all copies of the software from
+your systems.
+
+
 If you don't agree
 
 If you don't accept these terms, please don't install or use NV-UV.
 By using it, you're agreeing to the points above.
 
-This license is governed by German law.
+
+Governing law
+
+This license is governed by German law, without prejudice to
+mandatory consumer protection rules in the user's country of
+residence. Jurisdiction for disputes is the place of business of
+the author, to the extent permitted by law.
