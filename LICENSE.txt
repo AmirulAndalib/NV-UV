@@ -1,5 +1,5 @@
 NV-UV — License
-Version 1.0 — November 2026
+Version 1.0 — June 2026
 
 Build 22 · "Cantor" · Open Alpha
 Copyright (c) 2026 Christian Papaioannou. All rights reserved.
