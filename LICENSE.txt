@@ -4,28 +4,7 @@ Version 1.0 — June 2026
 Build 22 · "Cantor" · Open Alpha
 Copyright (c) 2026 Christian Papaioannou. All rights reserved.
 
-NV-UV is free for personal and non-commercial use. This includes
-private use, hobbyist streaming, and any kind of non-commercial
-activity.
-
-Experts and technically skilled users are explicitly welcome to use
-NV-UV in any way they like — including hands-on tuning on their own
-or other people's machines, helping friends or community members
-configure their GPUs, fine-tuning systems for enthusiasts, or any
-similar advanced use. The only line that matters is the line between
-"help with the tool" and "charge money for the tool's output".
-
-In short:
-
-* Using NV-UV to tune your own GPU, a friend's GPU, a family
-  member's GPU, or someone's machine you're helping out with — fine.
-* Showing someone how to use NV-UV in a workshop, on a streaming
-  channel, in a Discord call, or anywhere else — fine.
-* Selling tuning services where NV-UV does the actual work, or
-  charging customers specifically for results produced with NV-UV
-  — that's commercial use, please get in touch.
-
-
+NV-UV is free for personal and non-commercial use.
 Media coverage and content creation
 
 Content creators, streamers, reviewers, journalists, and YouTubers —
@@ -49,6 +28,22 @@ If you're a press outlet or larger channel and want early access to
 new builds, release notes, or background information, just reach out
 via the contact address below.
 
+Experts and technically skilled users are explicitly welcome to use
+NV-UV in any way they like — including hands-on tuning on their own
+or other people's machines, helping friends or community members
+configure their GPUs, fine-tuning systems for enthusiasts, or any
+similar advanced use. The only line that matters is the line between
+"help with the tool" and "charge money for the tool's output".
+
+In short:
+
+* Using NV-UV to tune your own GPU, a friend's GPU, a family
+  member's GPU, or someone's machine you're helping out with — fine.
+* Showing someone how to use NV-UV in a workshop, on a streaming
+  channel, in a Discord call, or anywhere else — fine.
+* Selling tuning services where NV-UV does the actual work, or
+  charging customers specifically for results produced with NV-UV
+  — that's commercial use, please get in touch.
 
 What you may not do without my permission
 
