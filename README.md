@@ -23,8 +23,8 @@ The latest build is available as a password-protected ZIP under [Releases](https
 - **GPU:** NVIDIA RTX 5090 / 5080 / 5070 Ti / 5070 / 5060 Ti / 5060 (Blackwell)  
   or NVIDIA RTX 4090 / 4080 / 4070 Ti Super / 4070 Ti / 4070 Super / 4070 / 4060 Ti / 4060 (Ada Lovelace)  
   or NVIDIA RTX 3090 Ti / 3090 / 3080 Ti / 3080 / 3070 Ti / 3070 / 3060 Ti / 3060 (Ampere, new in v0.97, verified on RTX 3090 only, other models experimental)
-- **Dependencies:** MSI Afterburner 4.6.6+ with RivaTuner Statistics Server (RTSS)
 - **Mobile / Laptop GPUs:** Not directly supported and not tested by me. The scanner may run, but there is no guarantee it works on mobile chips. You are welcome to try it at your own risk, but expect issues. Notebook support is on the ToDo.
+- **Dependencies:** MSI Afterburner 4.6.6+ with RivaTuner Statistics Server (RTSS)
 - **Driver:** Latest NVIDIA driver recommended
 
 ---
