@@ -14,7 +14,7 @@ NV-UV is a **companion tool**, not a replacement for Afterburner. For overclocki
 ---
 
 ## Download
-The latest build is available as a password-protected ZIP under [Releases](https://github.com/christianp403-spec/NV-UV/releases).
+The latest build is available as a ZIP under [Releases](https://github.com/christianp403-spec/NV-UV/releases).
 
 ---
 
