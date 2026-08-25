@@ -70,10 +70,17 @@ trademarks of the author.
 
 Privacy
 
-NV-UV does not collect, transmit, or share any personal data,
-telemetry, or usage statistics. All operation is local to your
-computer. Crash dumps and log files stay on your machine unless you
-choose to share them in a bug report.
+NV-UV does not silently upload diagnostics, profiles, raw performance
+logs, or personal files. Normal operation remains local. Online
+functions connect only when required for the action you choose, such
+as checking or downloading an official update from GitHub, using a
+community feature, or sending an optional error report.
+
+An error report is first created as a local ZIP. It is transmitted
+privately through Cloudflare only after you review the package, give
+consent, and press the send button. Optional images are included only
+when you select them. GitHub, Cloudflare, and other selected online
+services may receive ordinary connection data such as your IP address.
 
 
 External dependencies

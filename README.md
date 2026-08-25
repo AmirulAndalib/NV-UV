@@ -1,13 +1,13 @@
 # NV-UV
 **GPU Undervolt Companion Tool for NVIDIA RTX 30 (Ampere), RTX 40 (Ada Lovelace) and RTX 50 (Blackwell)**
 
-NV-UV simplifies GPU undervolting by working alongside MSI Afterburner. One-click presets, automatic game detection, crash recovery, and a built-in DX12+DXR stress test scanner.
+NV-UV simplifies GPU undervolting by working alongside MSI Afterburner. It combines one-click presets, automatic game detection, crash recovery, a built-in DX12+DXR stress-test scanner and optional clock-efficiency control for games.
 
 NV-UV is a **companion tool**, not a replacement for Afterburner. For overclocking, OSD, fan control and advanced curve editing, Afterburner remains the tool of choice.
 
 **Platform:** Windows 10/11 (64-bit) only. NV-UV does not run on Linux or macOS.
 
-> **New in v0.97:** Ampere (RTX 30) support has been added. So far it is verified on an RTX 3090 only, all other Ampere models are experimental and untested. Testing and feedback are very welcome, please attach a log when reporting an issue.
+> **New in v0.99.5:** Dynamic Clock Clapping (DCC), NVIDIA Auto-UV, NVIDIA Ultra Efficiency, verified manual updates with rollback, optional private diagnostic reports, Game Database 2.15 with 647 games and numerous setup, telemetry and recovery fixes.
 
 > **Not to be confused with** [doums/nvuv](https://github.com/doums/nvuv), a separate CLI tool for NVIDIA undervolting on Linux written in Zig. Different platform, different scope, different project.
 
@@ -35,14 +35,19 @@ The latest build is available as a ZIP under [Releases](https://github.com/chris
 - **OCS → UV Import** — import AB OC Scanner results, build a chip-specific UV curve
 - **Voltage Step Scanner** — DX12+DXR stress engine with FMA math-error detection
 - **Game Replay** — automatic frequency step-down on crash, with per-game learning loop
-- **UV-Pilot** — detects 632 games, automatically switches to the optimal UV preset
+- **DCC — Dynamic Clock Clapping** — learns efficient clock caps for recognized games and remembers them per game and GPU
+- **NVIDIA Ultra Efficiency** — optional experimental global NVIDIA efficiency mode
+- **NVIDIA Auto-UV** — previews an individual starting point and applies it only after confirmation
+- **UV-Pilot** — recognizes 647 games, automatically switches to the selected UV preset
 - **Smart Hz** — desktop 60 Hz, gaming native Hz (experimental)
-- **Mini View**, **DE/EN localization**, **System Tray**, **4 Skins**
+- **Verified Updates** — manual installation, signed packages and rollback if installation fails
+- **Local Diagnostics** — creates a local ZIP first; optional private sending only after review and consent
+- **Mini View**, **DE/EN localization**, **System Tray**, **5 Skins**
 
 ---
 
 ## How It Works
-NV-UV reads and writes MSI Afterburner profile files to apply voltage/frequency curves. Live telemetry comes via MAHM Shared Memory and NVML. The stress test runs as a separate process so a GPU crash won't take down the UI.
+NV-UV reads and writes MSI Afterburner profile files to apply voltage/frequency curves. Its central GPU-control path coordinates UV profiles and DCC so they do not write competing settings. Live telemetry is collected centrally from the available providers. The stress test runs as a separate process so a GPU crash will not take down the UI.
 
 ---
 
