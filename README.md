@@ -7,7 +7,9 @@ NV-UV is a **companion tool**, not a replacement for Afterburner. For overclocki
 
 **Platform:** Windows 10/11 (64-bit) only. NV-UV does not run on Linux or macOS.
 
-> **New in v0.99.5:** Dynamic Clock Clapping (DCC), NVIDIA Auto-UV, NVIDIA Ultra Efficiency, verified manual updates with rollback, optional private diagnostic reports, Game Database 2.15 with 647 games and numerous setup, telemetry and recovery fixes.
+> **New in v0.99.5:** Dynamic Clock Clapping (DCC), NVIDIA Auto-UV, NVIDIA Ultra Efficiency, verified manual updates with rollback, optional private diagnostic reports and numerous setup, telemetry and recovery fixes.
+
+> **Hotfix v0.99.5.2:** hardens DCC interaction with UV-Pilot and Game Replay, connects Smart Hz correctly to the NVIDIA Ultra Efficiency AUTO target, fixes Ada recalibration and adds an opt-in extended Ada OC range. Game Database 2.16 contains 651 games.
 
 > **Not to be confused with** [doums/nvuv](https://github.com/doums/nvuv), a separate CLI tool for NVIDIA undervolting on Linux written in Zig. Different platform, different scope, different project.
 
@@ -38,11 +40,11 @@ The latest build is available as a ZIP under [Releases](https://github.com/chris
 - **DCC — Dynamic Clock Clapping** — learns efficient clock caps for recognized games and remembers them per game and GPU
 - **NVIDIA Ultra Efficiency** — optional experimental global NVIDIA efficiency mode
 - **NVIDIA Auto-UV** — previews an individual starting point and applies it only after confirmation
-- **UV-Pilot** — recognizes 647 games, automatically switches to the selected UV preset
+- **UV-Pilot** — recognizes 651 games, automatically switches to the selected UV preset
 - **Smart Hz** — desktop 60 Hz, gaming native Hz (experimental)
 - **Verified Updates** — manual installation, signed packages and rollback if installation fails
 - **Local Diagnostics** — creates a local ZIP first; optional private sending only after review and consent
-- **Mini View**, **DE/EN localization**, **System Tray**, **5 Skins**
+- **Mini View**, **DE/EN/RU/ES localization**, **System Tray**, **5 Skins**
 
 ---
 
