@@ -11,6 +11,23 @@ NV-UV is a **companion tool**, not a replacement for Afterburner. For overclocki
 
 > **Hotfix v0.99.5.2:** hardens DCC interaction with UV-Pilot and Game Replay, connects Smart Hz correctly to the NVIDIA Ultra Efficiency AUTO target, fixes Ada recalibration and adds an opt-in extended Ada OC range. Game Database 2.16 contains 651 games.
 
+## NV-UV v0.99.5.4
+
+### Fixes
+
+- Fixed Blackwell Direct Mode curves for low-voltage targets up to and including 875 mV.
+- Manually created MSI Afterburner profiles are now detected and displayed correctly at startup and after using `AB←`.
+- Fixed the Blackwell Hotspot Wizard configuration for the detected GPU.
+- Fixed NV-UV remaining stuck on “Detecting GPU…” when DCC safely rejects a local data path containing a symlink or junction. NV-UV now displays a clear message identifying the affected path while keeping DCC changes safely blocked.
+- Fixed the Updates button appearance across all skins.
+
+### New and improved
+
+- Patch Notes now open automatically after a successfully verified update and can be opened again from the Updates window.
+- Game suggestions can now be submitted using the new button in the Game Database.
+- “Export diagnostics” has been renamed to “Send / export error report …”.
+- Removed “Restore previous curve” from NVIDIA Auto-UV.
+
 > **Not to be confused with** [doums/nvuv](https://github.com/doums/nvuv), a separate CLI tool for NVIDIA undervolting on Linux written in Zig. Different platform, different scope, different project.
 
 ---
