@@ -7,26 +7,25 @@ NV-UV is a **companion tool**, not a replacement for Afterburner. For overclocki
 
 **Platform:** Windows 10/11 (64-bit) only. NV-UV does not run on Linux or macOS.
 
-> **New in v0.99.5:** Dynamic Clock Clapping (DCC), NVIDIA Auto-UV, NVIDIA Ultra Efficiency, verified manual updates with rollback, optional private diagnostic reports and numerous setup, telemetry and recovery fixes.
+> **New in v0.99.5:** Dynamic Clock Clapping (DCC), NVIDIA Auto-UV, NVIDIA Power Efficiency Mode, verified manual updates with rollback, optional private diagnostic reports and numerous setup, telemetry and recovery fixes.
 
-> **Hotfix v0.99.5.2:** hardens DCC interaction with UV-Pilot and Game Replay, connects Smart Hz correctly to the NVIDIA Ultra Efficiency AUTO target, fixes Ada recalibration and adds an opt-in extended Ada OC range. Game Database 2.16 contains 651 games.
+> **Hotfix v0.99.5.2:** hardens DCC interaction with UV-Pilot and Game Replay, connects Smart Hz correctly to the NVIDIA Power Efficiency Mode AUTO target, fixes Ada recalibration and adds an opt-in extended Ada OC range. Game Database 2.16 contains 651 games.
 
-## NV-UV v0.99.5.4
+## NV-UV v0.99.5.5
 
 ### Fixes
 
-- Fixed Blackwell Direct Mode curves for low-voltage targets up to and including 875 mV.
-- Manually created MSI Afterburner profiles are now detected and displayed correctly at startup and after using `AB←`.
-- Fixed the Blackwell Hotspot Wizard configuration for the detected GPU.
-- Fixed NV-UV remaining stuck on “Detecting GPU…” when DCC safely rejects a local data path containing a symlink or junction. NV-UV now displays a clear message identifying the affected path while keeping DCC changes safely blocked.
-- Fixed the Updates button appearance across all skins.
+- A configuration profile temporarily locked by MSI Afterburner no longer leaves NV-UV stuck on “Initializing…”. NV-UV briefly retries the read and continues starting safely if the file remains busy.
+- Pending Game Replay downsteps are stored more reliably and are only cleared after the profile update succeeds.
 
 ### New and improved
 
-- Patch Notes now open automatically after a successfully verified update and can be opened again from the Updates window.
-- Game suggestions can now be submitted using the new button in the Game Database.
-- “Export diagnostics” has been renamed to “Send / export error report …”.
-- Removed “Restore previous curve” from NVIDIA Auto-UV.
+- Protection of existing Afterburner profiles during first launch has been improved. NV-UV captures the stock curve without changing an already active manual V/F curve or occupied profile slots.
+- Detection of manually sharpened Blackwell profiles in the low-voltage range has been improved. Previously, their effective clock could be detected incorrectly.
+- Working Hotspot installations remain unchanged. Older NV-UV-managed setups are updated to MSI Afterburner's compatible native GPUProbe path only when required, with automatic backup and rollback protection.
+- “Fix NV-Overlay” provides a direct repair for NVIDIA Overlay no longer appearing in games and may avoid reinstalling NVIDIA App or the graphics driver.
+- Interface scaling now also offers 80% and 90%. NVIDIA's efficiency feature is named “NVIDIA Power Efficiency Mode”, and several help and form labels have been clarified.
+- Game Database 2.18 contains 652 games and adds an Eco preset for Halo: The Master Chief Collection.
 
 > **Not to be confused with** [doums/nvuv](https://github.com/doums/nvuv), a separate CLI tool for NVIDIA undervolting on Linux written in Zig. Different platform, different scope, different project.
 
@@ -55,9 +54,9 @@ The latest build is available as a ZIP under [Releases](https://github.com/chris
 - **Voltage Step Scanner** — DX12+DXR stress engine with FMA math-error detection
 - **Game Replay** — automatic frequency step-down on crash, with per-game learning loop
 - **DCC — Dynamic Clock Clapping** — learns efficient clock caps for recognized games and remembers them per game and GPU
-- **NVIDIA Ultra Efficiency** — optional experimental global NVIDIA efficiency mode
+- **NVIDIA Power Efficiency Mode** — optional experimental global NVIDIA efficiency mode
 - **NVIDIA Auto-UV** — previews an individual starting point and applies it only after confirmation
-- **UV-Pilot** — recognizes 651 games, automatically switches to the selected UV preset
+- **UV-Pilot** — recognizes 652 games, automatically switches to the selected UV preset
 - **Smart Hz** — desktop 60 Hz, gaming native Hz (experimental)
 - **Verified Updates** — manual installation, signed packages and rollback if installation fails
 - **Local Diagnostics** — creates a local ZIP first; optional private sending only after review and consent
