@@ -9,23 +9,15 @@ NV-UV is a **companion tool**, not a replacement for Afterburner. For overclocki
 
 > **New in v0.99.5:** Dynamic Clock Clapping (DCC), NVIDIA Auto-UV, NVIDIA Power Efficiency Mode, verified manual updates with rollback, optional private diagnostic reports and numerous setup, telemetry and recovery fixes.
 
-> **Hotfix v0.99.5.2:** hardens DCC interaction with UV-Pilot and Game Replay, connects Smart Hz correctly to the NVIDIA Power Efficiency Mode AUTO target, fixes Ada recalibration and adds an opt-in extended Ada OC range. Game Database 2.16 contains 651 games.
+## NV-UV v0.99.5.6
 
-## NV-UV v0.99.5.5
+- Toolbars wrap automatically when the window becomes narrower; sensor displays can be dragged individually and reset with a right-click.
+- Window size, position, maximized state and sensor layout are saved. Scaling and smaller windows keep the chart, axes, status bar and error-report controls usable.
+- Stale Afterburner readings are detected, with automatic reconnection when fresh data becomes available.
+- The UV-Party background stays inside the chart.
+- Game Database 2.20 includes 655 games. The guides in all four languages now explain the flexible layout.
 
-### Fixes
-
-- A configuration profile temporarily locked by MSI Afterburner no longer leaves NV-UV stuck on “Initializing…”. NV-UV briefly retries the read and continues starting safely if the file remains busy.
-- Pending Game Replay downsteps are stored more reliably and are only cleared after the profile update succeeds.
-
-### New and improved
-
-- Protection of existing Afterburner profiles during first launch has been improved. NV-UV captures the stock curve without changing an already active manual V/F curve or occupied profile slots.
-- Detection of manually sharpened Blackwell profiles in the low-voltage range has been improved. Previously, their effective clock could be detected incorrectly.
-- Working Hotspot installations remain unchanged. Older NV-UV-managed setups are updated to MSI Afterburner's compatible native GPUProbe path only when required, with automatic backup and rollback protection.
-- “Fix NV-Overlay” provides a direct repair for NVIDIA Overlay no longer appearing in games and may avoid reinstalling NVIDIA App or the graphics driver.
-- Interface scaling now also offers 80% and 90%. NVIDIA's efficiency feature is named “NVIDIA Power Efficiency Mode”, and several help and form labels have been clarified.
-- Game Database 2.18 contains 652 games and adds an Eco preset for Halo: The Master Chief Collection.
+[Release notes and download](https://github.com/christianp403-spec/NV-UV/releases/tag/v0.99.5.6) · [VirusTotal report: 0/67 detections at release preparation](https://www.virustotal.com/gui/file/648f319e2a2aa0a58006f4d0c162f4006661caf52818777caf956b7de859018f)
 
 > **Not to be confused with** [doums/nvuv](https://github.com/doums/nvuv), a separate CLI tool for NVIDIA undervolting on Linux written in Zig. Different platform, different scope, different project.
 
@@ -56,7 +48,7 @@ The latest build is available as a ZIP under [Releases](https://github.com/chris
 - **DCC — Dynamic Clock Clapping** — learns efficient clock caps for recognized games and remembers them per game and GPU
 - **NVIDIA Power Efficiency Mode** — optional experimental global NVIDIA efficiency mode
 - **NVIDIA Auto-UV** — previews an individual starting point and applies it only after confirmation
-- **UV-Pilot** — recognizes 652 games, automatically switches to the selected UV preset
+- **UV-Pilot** — recognizes 655 games, automatically switches to the selected UV preset
 - **Smart Hz** — desktop 60 Hz, gaming native Hz (experimental)
 - **Verified Updates** — manual installation, signed packages and rollback if installation fails
 - **Local Diagnostics** — creates a local ZIP first; optional private sending only after review and consent
