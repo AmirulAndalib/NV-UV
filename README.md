@@ -9,15 +9,11 @@ NV-UV is a **companion tool**, not a replacement for Afterburner. For overclocki
 
 > **New in v0.99.5:** Dynamic Clock Clapping (DCC), NVIDIA Auto-UV, NVIDIA Power Efficiency Mode, verified manual updates with rollback, optional private diagnostic reports and numerous setup, telemetry and recovery fixes.
 
-## NV-UV v0.99.5.6
+## Update availability
 
-- Toolbars wrap automatically when the window becomes narrower; sensor displays can be dragged individually and reset with a right-click.
-- Window size, position, maximized state and sensor layout are saved. Scaling and smaller windows keep the chart, axes, status bar and error-report controls usable.
-- Stale Afterburner readings are detected, with automatic reconnection when fresh data becomes available.
-- The UV-Party background stays inside the chart.
-- Game Database 2.20 includes 655 games. The guides in all four languages now explain the flexible layout.
+**v0.99.5.6 has been withdrawn while a reported GPU temperature display issue is investigated.**
 
-[Release notes and download](https://github.com/christianp403-spec/NV-UV/releases/tag/v0.99.5.6) · [VirusTotal report: 0/67 detections at release preparation](https://www.virustotal.com/gui/file/648f319e2a2aa0a58006f4d0c162f4006661caf52818777caf956b7de859018f)
+The current available prerelease is [NV-UV v0.99.5.5](https://github.com/christianp403-spec/NV-UV/releases/tag/v0.99.5.5).
 
 > **Not to be confused with** [doums/nvuv](https://github.com/doums/nvuv), a separate CLI tool for NVIDIA undervolting on Linux written in Zig. Different platform, different scope, different project.
 
