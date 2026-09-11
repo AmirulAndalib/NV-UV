@@ -9,15 +9,15 @@ NV-UV is a **companion tool**, not a replacement for Afterburner. For overclocki
 
 > **New in v0.99.5:** Dynamic Clock Clapping (DCC), NVIDIA Auto-UV, NVIDIA Power Efficiency Mode, verified manual updates with rollback, optional private diagnostic reports and numerous setup, telemetry and recovery fixes.
 
-## NV-UV v0.99.5.6
+## NV-UV v0.99.5.7
 
-- Toolbars wrap automatically when the window becomes narrower; sensor displays can be dragged individually and reset with a right-click.
-- Window size, position, maximized state and sensor layout are saved. Scaling and smaller windows keep the chart, axes, status bar and error-report controls usable.
-- Stale Afterburner readings are detected, with automatic reconnection when fresh data becomes available.
-- The UV-Party background stays inside the chart.
-- Game Database 2.20 includes 655 games. The guides in all four languages now explain the flexible layout.
+- The Afterburner setup wizard checks and can enable core-temperature monitoring for the active NVIDIA GPU.
+- Sensor layouts remain orderly when Hotspot or other readings disappear and return.
+- Telemetry is more resilient to driver errors and GPU resets.
+- Scanner and optimization results are checked against fresh voltage readings under load. The result overview shows requested voltage, measured voltage and clock speed under load; failed history points are marked and blocked from slot assignment.
+- Game Database 2.21 includes 658 games.
 
-[Release notes and download](https://github.com/christianp403-spec/NV-UV/releases/tag/v0.99.5.6) · [VirusTotal report: 0/67 detections at release preparation](https://www.virustotal.com/gui/file/648f319e2a2aa0a58006f4d0c162f4006661caf52818777caf956b7de859018f)
+[Release notes and download](https://github.com/christianp403-spec/NV-UV/releases/tag/v0.99.5.7)
 
 > **Not to be confused with** [doums/nvuv](https://github.com/doums/nvuv), a separate CLI tool for NVIDIA undervolting on Linux written in Zig. Different platform, different scope, different project.
 
@@ -48,7 +48,7 @@ The latest build is available as a ZIP under [Releases](https://github.com/chris
 - **DCC — Dynamic Clock Clapping** — learns efficient clock caps for recognized games and remembers them per game and GPU
 - **NVIDIA Power Efficiency Mode** — optional experimental global NVIDIA efficiency mode
 - **NVIDIA Auto-UV** — previews an individual starting point and applies it only after confirmation
-- **UV-Pilot** — recognizes 655 games, automatically switches to the selected UV preset
+- **UV-Pilot** — recognizes 658 games, automatically switches to the selected UV preset
 - **Smart Hz** — desktop 60 Hz, gaming native Hz (experimental)
 - **Verified Updates** — manual installation, signed packages and rollback if installation fails
 - **Local Diagnostics** — creates a local ZIP first; optional private sending only after review and consent
