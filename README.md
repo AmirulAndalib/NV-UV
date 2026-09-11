@@ -17,7 +17,7 @@ NV-UV is a **companion tool**, not a replacement for Afterburner. For overclocki
 - Scanner and optimization results are checked against fresh voltage readings under load. The result overview shows requested voltage, measured voltage and clock speed under load; failed history points are marked and blocked from slot assignment.
 - Game Database 2.21 includes 658 games.
 
-[Release notes and download](https://github.com/christianp403-spec/NV-UV/releases/tag/v0.99.5.7)
+[Release notes and download](https://github.com/christianp403-spec/NV-UV/releases/tag/v0.99.5.7) · [VirusTotal report: 0/67 detections when checked on September 11, 2026](https://www.virustotal.com/gui/file/40d884b8bd772a24a96435ee9f5e8073e2668623cf65eda5997a424e081c5de7)
 
 > **Not to be confused with** [doums/nvuv](https://github.com/doums/nvuv), a separate CLI tool for NVIDIA undervolting on Linux written in Zig. Different platform, different scope, different project.
 
