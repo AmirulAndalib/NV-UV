@@ -9,15 +9,16 @@ NV-UV is a **companion tool**, not a replacement for Afterburner. For overclocki
 
 > **New in v0.99.5:** Dynamic Clock Clapping (DCC), NVIDIA Auto-UV, NVIDIA Power Efficiency Mode, verified manual updates with rollback, optional private diagnostic reports and numerous setup, telemetry and recovery fixes.
 
-## NV-UV v0.99.5.7
+## NV-UV v0.99.5.8
 
-- The Afterburner setup wizard checks and can enable core-temperature monitoring for the active NVIDIA GPU.
-- Sensor layouts remain orderly when Hotspot or other readings disappear and return.
-- Telemetry is more resilient to driver errors and GPU resets.
-- Scanner and optimization results are checked against fresh voltage readings under load. The result overview shows requested voltage, measured voltage and clock speed under load; failed history points are marked and blocked from slot assignment.
-- Game Database 2.21 includes 658 games.
+- More controlled handling of unrecoverable display failures after a driver crash. Restarting NV-UV may still be required.
+- Failed or incomplete scanner verifications remain blocked after restarting NV-UV.
+- Point scanning and optimization work again on detected notebook GPUs without voltage telemetry, with fresh clock/load readings and a passed load test. Missing voltage confirmation is indicated.
+- Scanner recovery and result messages follow the selected language, and its window fits the current monitor's work area.
+- A Hotspot configuration lock caused by routine Afterburner changes after a valid rollback is fixed.
+- Driver-update restart notices and expanded diagnostics help investigate sensor availability and recovery.
 
-[Release notes and download](https://github.com/christianp403-spec/NV-UV/releases/tag/v0.99.5.7) · [VirusTotal report: 0/67 detections when checked on September 11, 2026](https://www.virustotal.com/gui/file/40d884b8bd772a24a96435ee9f5e8073e2668623cf65eda5997a424e081c5de7)
+[Release notes and download](https://github.com/christianp403-spec/NV-UV/releases/tag/v0.99.5.8) · [VirusTotal report: 0/67 detections when checked on September 14, 2026](https://www.virustotal.com/gui/file/adbf1f58ff74ec42ab10cb5e17b4c07c6f37c35615c10ca1ed8ff24a1fed9ad9)
 
 > **Not to be confused with** [doums/nvuv](https://github.com/doums/nvuv), a separate CLI tool for NVIDIA undervolting on Linux written in Zig. Different platform, different scope, different project.
 
