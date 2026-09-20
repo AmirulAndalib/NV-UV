@@ -9,16 +9,23 @@ NV-UV is a **companion tool**, not a replacement for Afterburner. For overclocki
 
 > **New in v0.99.5:** Dynamic Clock Clapping (DCC), NVIDIA Auto-UV, NVIDIA Power Efficiency Mode, verified manual updates with rollback, optional private diagnostic reports and numerous setup, telemetry and recovery fixes.
 
-## NV-UV v0.99.5.8
+## NV-UV v0.99.5.9
 
-- More controlled handling of unrecoverable display failures after a driver crash. Restarting NV-UV may still be required.
-- Failed or incomplete scanner verifications remain blocked after restarting NV-UV.
-- Point scanning and optimization work again on detected notebook GPUs without voltage telemetry, with fresh clock/load readings and a passed load test. Missing voltage confirmation is indicated.
-- Scanner recovery and result messages follow the selected language, and its window fits the current monitor's work area.
-- A Hotspot configuration lock caused by routine Afterburner changes after a valid rollback is fixed.
-- Driver-update restart notices and expanded diagnostics help investigate sensor availability and recovery.
+This update improves Hotspot recovery, GPU-to-VRAM test transitions, Afterburner setup and game detection.
 
-[Release notes and download](https://github.com/christianp403-spec/NV-UV/releases/tag/v0.99.5.8) · [VirusTotal report: 0/67 detections when checked on September 14, 2026](https://www.virustotal.com/gui/file/adbf1f58ff74ec42ab10cb5e17b4c07c6f37c35615c10ca1ed8ff24a1fed9ad9)
+- A verified missing Hotspot mapping can be repaired through the Hotspot button using its checked backup, without resetting UV profiles. This mapping-only conflict no longer blocks other UV features.
+- Hotspot recovery verifies restored files and restores the matching previous state. Incomplete recovery is not reported as successful.
+- OSD hotkeys, capture options, other sensor displays and saved profiles no longer cause a false lock after a rolled-back Hotspot setup. Hotspot configuration, GPU identity and backup checks remain in place.
+- The Afterburner wizard also detects disabled GPU core and memory clock sensors and offers to enable them.
+- After Apply UV, the pending slot selection can be discarded with Cancel or Escape in both the main and mini views, without saving a profile.
+- At the transition from GPU to VRAM testing, the scanner reads back core and memory state. Already confirmed settings are not written again unnecessarily; the second load test remains in place.
+- **New limitation: If driver state cannot be reliably read back or confirmed, VRAM testing stops. An unconfirmed state is not accepted as a passed test.**
+- UV-Pilot and DCC support additional game processes identified by an installation path and a required file. Necesse gains a targeted Java rule without treating unrelated Java applications as games. Live gameplay validation for Necesse is still pending.
+- The bundled Game Database 2.26 contains 695 entries.
+
+Thanks for your feedback, bug reports and diagnostic exports!
+
+[Release notes and download](https://github.com/christianp403-spec/NV-UV/releases/tag/v0.99.5.9) · [VirusTotal report](https://www.virustotal.com/gui/file/ecdef9f6f323a795aef538c7f638693c4b011b8ac2c621c1f9e49adc8025bd2a)
 
 > **Not to be confused with** [doums/nvuv](https://github.com/doums/nvuv), a separate CLI tool for NVIDIA undervolting on Linux written in Zig. Different platform, different scope, different project.
 
@@ -49,7 +56,7 @@ The latest build is available as a ZIP under [Releases](https://github.com/chris
 - **DCC — Dynamic Clock Clapping** — learns efficient clock caps for recognized games and remembers them per game and GPU
 - **NVIDIA Power Efficiency Mode** — optional experimental global NVIDIA efficiency mode
 - **NVIDIA Auto-UV** — previews an individual starting point and applies it only after confirmation
-- **UV-Pilot** — recognizes 658 games, automatically switches to the selected UV preset
+- **UV-Pilot** — recognizes 695 games, automatically switches to the selected UV preset
 - **Smart Hz** — desktop 60 Hz, gaming native Hz (experimental)
 - **Verified Updates** — manual installation, signed packages and rollback if installation fails
 - **Local Diagnostics** — creates a local ZIP first; optional private sending only after review and consent
