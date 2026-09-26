@@ -9,23 +9,20 @@ NV-UV is a **companion tool**, not a replacement for Afterburner. For overclocki
 
 > **New in v0.99.5:** Dynamic Clock Clapping (DCC), NVIDIA Auto-UV, NVIDIA Power Efficiency Mode, verified manual updates with rollback, optional private diagnostic reports and numerous setup, telemetry and recovery fixes.
 
-## NV-UV v0.99.5.9
+## NV-UV v0.99.6.0
 
-This update improves Hotspot recovery, GPU-to-VRAM test transitions, Afterburner setup and game detection.
+This update reworks Hotspot and VRAM monitoring with independent PawnIO readings, guided migration and optional Afterburner/RTSS Hotspot support.
 
-- A verified missing Hotspot mapping can be repaired through the Hotspot button using its checked backup, without resetting UV profiles. This mapping-only conflict no longer blocks other UV features.
-- Hotspot recovery verifies restored files and restores the matching previous state. Incomplete recovery is not reported as successful.
-- OSD hotkeys, capture options, other sensor displays and saved profiles no longer cause a false lock after a rolled-back Hotspot setup. Hotspot configuration, GPU identity and backup checks remain in place.
-- The Afterburner wizard also detects disabled GPU core and memory clock sensors and offers to enable them.
-- After Apply UV, the pending slot selection can be discarded with Cancel or Escape in both the main and mini views, without saving a profile.
-- At the transition from GPU to VRAM testing, the scanner reads back core and memory state. Already confirmed settings are not written again unnecessarily; the second load test remains in place.
-- **New limitation: If driver state cannot be reliably read back or confirmed, VRAM testing stops. An unconfirmed state is not accepted as a passed test.**
-- UV-Pilot and DCC support additional game processes identified by an installation path and a required file. Necesse gains a targeted Java rule without treating unrelated Java applications as games. Live gameplay validation for Necesse is still pending.
-- The bundled Game Database 2.26 contains 695 entries.
+- Sensor migration preserves UV profiles and respects disabled displays. Missing optional sensor readings do not block UV features.
+- PawnIO is downloaded and installed when you apply enabled sensor options if it is missing. Internet access and Windows administrator approval are required.
+- The VRAM Hotspot display shows the highest individual temperature, with the sensor list available on click.
+- Improved Voltage Step Scanner monitoring and reporting of interrupted readings, single-instance handling and restoration from the system tray.
+- Improved DCC game detection for restricted game processes, including The Division 2, and cleanup after failed in-place file replacements.
+- The bundled Game Database **2.28** contains **699 entries**, including **CODE VEIN II** and **Valheim**.
 
-Thanks for your feedback, bug reports and diagnostic exports!
+Thanks for your feedback, bug reports and diagnostic data!
 
-[Release notes and download](https://github.com/christianp403-spec/NV-UV/releases/tag/v0.99.5.9) · [VirusTotal report](https://www.virustotal.com/gui/file/ecdef9f6f323a795aef538c7f638693c4b011b8ac2c621c1f9e49adc8025bd2a)
+[Release notes and download](https://github.com/christianp403-spec/NV-UV/releases/tag/v0.99.6.0)
 
 > **Not to be confused with** [doums/nvuv](https://github.com/doums/nvuv), a separate CLI tool for NVIDIA undervolting on Linux written in Zig. Different platform, different scope, different project.
 
@@ -48,18 +45,18 @@ The latest build is available as a ZIP under [Releases](https://github.com/chris
 ---
 
 ## Features
-- **Voltage Lock** — one click, GPU runs at an exact voltage/frequency point
-- **4 Presets** — Eco, Balanced, Performance, Max (community-validated per GPU)
-- **OCS → UV Import** — import AB OC Scanner results, build a chip-specific UV curve
-- **Voltage Step Scanner** — DX12+DXR stress engine with FMA math-error detection
-- **Game Replay** — automatic frequency step-down on crash, with per-game learning loop
-- **DCC — Dynamic Clock Clapping** — learns efficient clock caps for recognized games and remembers them per game and GPU
-- **NVIDIA Power Efficiency Mode** — optional experimental global NVIDIA efficiency mode
-- **NVIDIA Auto-UV** — previews an individual starting point and applies it only after confirmation
-- **UV-Pilot** — recognizes 695 games, automatically switches to the selected UV preset
-- **Smart Hz** — desktop 60 Hz, gaming native Hz (experimental)
-- **Verified Updates** — manual installation, signed packages and rollback if installation fails
-- **Local Diagnostics** — creates a local ZIP first; optional private sending only after review and consent
+- **Voltage Lock**: one click, GPU runs at an exact voltage/frequency point
+- **4 Presets**: Eco, Balanced, Performance, Max (community-validated per GPU)
+- **OCS → UV Import**: import AB OC Scanner results, build a chip-specific UV curve
+- **Voltage Step Scanner**: DX12+DXR stress engine with FMA math-error detection
+- **Game Replay**: automatic frequency step-down on crash, with per-game learning loop
+- **DCC: Dynamic Clock Clapping**: learns efficient clock caps for recognized games and remembers them per game and GPU
+- **NVIDIA Power Efficiency Mode**: optional experimental global NVIDIA efficiency mode
+- **NVIDIA Auto-UV**: previews an individual starting point and applies it only after confirmation
+- **UV-Pilot**: recognizes 699 games, automatically switches to the selected UV preset
+- **Smart Hz**: desktop 60 Hz, gaming native Hz (experimental)
+- **Verified Updates**: manual installation, signed packages and rollback if installation fails
+- **Local Diagnostics**: creates a local ZIP first; optional private sending only after review and consent
 - **Mini View**, **DE/EN/RU/ES localization**, **System Tray**, **5 Skins**
 
 ---
@@ -69,8 +66,25 @@ NV-UV reads and writes MSI Afterburner profile files to apply voltage/frequency 
 
 ---
 
+## Sensor monitoring
+
+GPU Hotspot and individual VRAM temperatures are read through [PawnIO](https://github.com/namazso/PawnIO), independently of Afterburner's Hotspot source. Readings depend on your GPU and available sensors. Afterburner remains required for NV-UV's profile control and other monitoring functions.
+
+The sensor dialog guides you through migration. Existing UV profiles are preserved. If PawnIO is missing, NV-UV downloads its official installer when you apply enabled sensor options; confirm the Windows administrator prompt. The PawnIO system driver is installed separately and is not bundled in the portable ZIP. Missing optional readings do not lock UV features. You can also keep or set up the optional Afterburner/RTSS Hotspot source and choose its OSD display in Afterburner.
+
 ## Troubleshooting
 **NV-UV closes immediately on launch, no window, no log.** This is almost always an outdated Windows build that is missing required OS components (WinRT / COM API-set contracts). In the Windows Event Viewer it shows up as an APPCRASH with exception code 0xc0000602 in KERNELBASE.dll. Install all pending Windows updates (Windows 10 needs 22H2 fully patched) and NV-UV will start normally. The crash happens in the Windows loader before any of NV-UV's own code runs, which is why no log is written.
+
+---
+
+## Credits
+
+Thank you to the projects and developers whose work supports NV-UV and NV-UV Play:
+
+- **[PawnIO](https://github.com/namazso/PawnIO) by namazso and the PawnIO.Modules contributors**, for the hardware access used by NV-UV's Hotspot and VRAM readings.
+- **[LibreHardwareMonitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor) and its contributors**, for CPU temperature monitoring in the standalone NV-UV Play application.
+
+Special thanks to Unwinder for his longstanding work on MSI Afterburner and GPU tuning tools. Required third-party notices are included with the portable release.
 
 ---
 
