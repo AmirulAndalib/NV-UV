@@ -81,6 +81,7 @@ The sensor dialog guides you through migration. Existing UV profiles are preserv
 
 Thank you to the projects and developers whose work supports NV-UV and NV-UV Play:
 
+- **[Green Curve](https://github.com/aufkrawall/green-curve) by [aufkrawall](https://github.com/aufkrawall)** (MIT License), for the NVAPI V/F-curve access approach used by NV-UV's native bridge.
 - **[PawnIO](https://github.com/namazso/PawnIO) by namazso and the PawnIO.Modules contributors**, for the hardware access used by NV-UV's Hotspot and VRAM readings.
 - **[LibreHardwareMonitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor) and its contributors**, for CPU temperature monitoring in the standalone NV-UV Play application.
 
