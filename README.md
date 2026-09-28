@@ -9,6 +9,12 @@ NV-UV is a **companion tool**, not a replacement for Afterburner. For overclocki
 
 > **New in v0.99.5:** Dynamic Clock Clapping (DCC), NVIDIA Auto-UV, NVIDIA Power Efficiency Mode, verified manual updates with rollback, optional private diagnostic reports and numerous setup, telemetry and recovery fixes.
 
+## Discover NV-UV Play
+
+**NV-UV Play** brings straightforward presets and advanced GPU tuning together in a standalone app. Set up automatic game profiles, fine-tune your voltage/frequency curve, use DCC and monitor performance with the built-in overlay. Play works without MSI Afterburner or RTSS and is currently in Alpha.
+
+**[Explore Play (English)](https://christianp403-spec.github.io/NV-UV-Play/en.html) · [Deutsch](https://christianp403-spec.github.io/NV-UV-Play/) · [Download Play](https://github.com/christianp403-spec/NV-UV-Play/releases)**
+
 ## NV-UV v0.99.6.0
 
 This update reworks Hotspot and VRAM monitoring with independent PawnIO readings, guided migration and optional Afterburner/RTSS Hotspot support.
